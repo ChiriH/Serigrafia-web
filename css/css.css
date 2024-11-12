@@ -1,0 +1,73 @@
+/* Estilos específicos del navbar */
+#navbar{
+    transition: transform 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+    #navbar {
+        background-color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #navbar.menu-open {
+        background-color: #f9fafb;
+    }
+    #navbar .hidden.md:block {
+        display: none;
+    }
+}
+
+/* Resto de estilos */
+/* Añade tus estilos personalizados aquí */
+html, body {
+    scroll-behavior: smooth;
+}
+
+.slider-container .slider {
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .slider > div {
+    flex: 0 0 auto;
+}
+.slider-container {
+    overflow: hidden;
+    width: 100%; /* Ancho del contenedor del slider */
+    height: 700px; /* Ajusta la altura del slider */
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%; /* Altura del slider */
+}
+
+.slider-item {
+    flex: 0 0 auto;
+    width: 100%; /* Ancho de cada cosito */
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura de la imagen para ocupar todo el espacio disponible */
+    object-fit: cover;
+}#slider .glide__slides img {
+    height: 300px; /* Ajusta esta altura según tu preferencia */
+}
+footer {
+    background-color: #333;
+}
+
+footer a {
+    color: #ccc;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Estilos para el logo */
+footer .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
